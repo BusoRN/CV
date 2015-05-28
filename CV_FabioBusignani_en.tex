@@ -42,9 +42,9 @@
 \vspace{-5mm}
 
 %Section
-\section{Info}
-\cvcomputer{Born}{\small September 8th, 1990 in Rimini (Italy)\normalsize}{Citizenship}{\small Italian\normalsize}
-\cvcomputer{Driver's License}{\small B, A\normalsize}{}{\small \url{}\normalsize}
+%\section{Info}
+%\cvcomputer{Born}{\small September 8th, 1990 in Rimini (Italy)\normalsize}{Citizenship}{\small Italian\normalsize}
+%\cvcomputer{Driver's License}{\small B, A\normalsize}{}{\small \url{}\normalsize}
 
 
 %Section
@@ -71,8 +71,17 @@
 \section{Desidered Employment and Current Skills}
 \cvline{}{\textbf{Hardware Engineer - Digital Electronics}\newline
 I have always loved the world of electronics, long before I started my studies in electronics. While I achieved high marks in school, my interest for electronics goes well beyond the academic setting. Indeed in my free time, I love to experiment with microcontrollers and embedded systems boards as well as deepen some interesting topics. \newline
-My course of study allowed me to have a sound electronic knowledge, focusing on digital electronics where I made some experience in every level of the design workflow of digital hardware implementation and SoC design. Indeed my dream is to become a digital designer. 
-What I am looking for is a working environment where I can grow both professionally and personally allowing me to follow my dream.}
+My course of study allowed me to have a strong electronic knowledge, focusing on digital electronics where I made some experience in every level of the design workflow of digital hardware implementation and SoC design. %Indeed my dream is to become a digital designer. 
+%What I am looking for is a working environment where I can grow both professionally and personally allowing me to follow my dream.
+}
+
+\section{Technical skills} 
+\cvline{Languages}{\small VHDL, C/C++, SystemC,   JAVA, C\#,  UML, MIPS Assembly, PIC Assembly, Python, \LaTeX}
+\cvline{Operating Systems}{Linux, Android, Windows} 
+\cvline{Software Tools}{Modelsim, Synopsys Design Compiler, Synopsys Design Vision, Quartus II, Cadence Design Environment, Multisim \& Ultiboard, NI
+	LabVIEW, Matlab + Simulink, Android Studio, Qt, mbed.org, IAR, MPLAB, Code Composer
+	Studio}
+\cvline{Hardware Platforms}{Electronic bench equipment, microPIC, MSP430, FRDM-KL25Z, Beaglebone Black, RaspberryPI, Altera Cyclon II, STM32F401}
 
 %Section
 \section{Education}
@@ -145,27 +154,57 @@ What I am looking for is a working environment where I can grow both professiona
 
 %\vspace{-3mm}
 %Section
-\section{Experience}
-\vspace{-2mm}
-\subsection{Working}
-\cventry{Apr. 2015 - Present}{Firmware Designer}{\href{http:http://www.sherlock.bike/}{Sherlock Bike}}{Turin}{Italy}{Sherlock is a GPS-based anti-theft device connected to a smartphone app that allows cyclists to precisely locate their bicycles and retrieve them in case of theft.}
-\cventry{Aug. 2014 - Feb. 2015}{Research Trainee}{\href{http://www.tissueeng.net/lab/}{Khademhosseini Lab (Harvard-MIT Health Sciences and Technology )}}{Cambridge, MA}{United States of America}{Designed and developed a custom user interface on Google Glass for simultaneous recording of
-	biosensing data (T, pH) and microscopy images/videos as well as remote control of microfluidic
-	valves for organ-on-a-chip applications.
-	In order to fulfill this aim I have designed and created a complete system
-which is based on Beaglebone Black.}
 
-\cventry{July 2012 - Sep. 2012}{Internship}{\href{http://www.4ts.it/}{Fortech s.r.l.}}{Rimini}{Italy}{Worked with the company's electronic engineers, learning about the hardwares present in payment systems of fuel service stations. }
-\cventry{2007 - 2010}{Summer Jobs}{\href{}{TES s.r.l. and FM s.n.c.}}{Rimini}{Italy}{Summer job as apprentice electrician and photovoltaic technician. }
-\subsection{Academic Achievements}
+\section{Academic Projects}
 %%Qui di seguito verranno elencati i progetti da me svolti durante gli studi per il corretto conseguimento di alcuni corsi.  \\
-\cventry{2013-2014}{Integrated System Architecture}{Polytechnic University of Turin}{Torino}{Italy}{Design of a FIR filter adopting pipeline technique to achieve the given clock frequency. The softwares exploited are \textit{Modelsim} and \textit{Synopsys}.\newline Design of an architecture which implements DCT, using \textit{TTA} architecture. The software used is \textit{TCE}, exploited for statistic approach in order to optimize the algorithm. \newline Design of an \textit{ACS} (Add-Compare-Select) unit. The architecture was described in SystemC. \textit{Modelsim}, \textit{G++} compiler and \textit{GTKWave} have been exploited to simulate the architecture.\newline \href{https://github.com/BusoRN/ISA-projects}{Github link.}}
-\cventry{2013-2014}{Operating Systems}{Polytechnic University of Turin}{Turin}{Italy}{Designed a Multithreaded version of Blowfish Algorithm.\newline
+\cventry{June 2014}{Multithreaded Blowfish Algorithm Implementation}{}{}{}{
 	\href{https://github.com/BusoRN/blowfish-OS}{Github link.}}
-\cventry{2012-2013}{Digital Integrated Systems}{Polytechnic University of Turin}{Torino}{Italy}{Design of an interface which manages the communications in a master-multi slave system. For this project a typical standard protocol of System-on-Chip communications, \textit{Whisbone},was exploited. The EDA softwares used are Modelsim and Quarts.
-\newline 
-Design of a processing element which implements a \textit{Butterfly}. In this project several hardware constraints were given, and they were solved through the adoption of the \textit{folding} technique.  }
-\cventry{2012-2013}{Low Power Electronic Systems}{Polytechnic University of Turin}{Torino}{Italy}{ %Laboratory experiences:
+
+\cventry{January 2014}{Design of a 4-state ACS (Add-Compare-Select) with SystemC}{}{}{}{Design covered the following steps:
+	\begin{itemize}
+		\item ACS design;
+		\item SystemC implementation;
+		\item Matlab implementation used to verify the results;
+		\item First simulation with G++ compiler and GTKwave viewer;
+		\item Second simulation with SystemC Modelsim;
+		\item Third simulation with  Modelsim mixed SystemC-Verilog  using a given implementation of the ACS.
+	\end{itemize} \href{https://github.com/BusoRN/ISA-projects/tree/master/Lab3}{Github link.}}
+
+\cventry{December 2013}{ASIP design based on Transport Triggered Architecture using TCE}{}{}{}{Design of an architecture which implements DCT, using \textit{TTA} architecture.\newline \href{https://github.com/BusoRN/ISA-projects/tree/master/Lab2}{Github link.}}
+
+\cventry{November 2013}{FIR ASIC Implementation}{}{}{}{Design covered the following steps:
+	\begin{itemize}
+		\item Behavior design with Matlab;
+		\item VHDL implementation;
+		\item Testbench implementation and simulation with Modelsim;
+		\item Switching activity-based power consumption estimation;
+		\item ASIC Place\&Route;
+		\item Post Place\&Route simulation and switching activity-based power consumption estimation.
+	\end{itemize} \href{https://github.com/BusoRN/ISA-projects/tree/master/Lab1}{Github link.}}
+
+
+\cventry{July 2013}{
+	Low-power serial interface for SoC functional units communication}{}{}{}{
+	The aim was to make a very low power interface, and in order to do this,  certain low power design methods were exploited, such as clock gating and state encoding. Synthesis was made with \textit{Synopsys Design Compiler}. \newline \href{https://github.com/BusoRN/Low-Power-Project}{Github link.}}
+
+
+\cventry{Jenuary 2013}{Butterfly Design using Microcode Technique}{}{}{}{Design of a processing element which implements a \textit{Butterfly}. In this project several hardware constraints were given, and they were solved through the adoption of the \textit{folding} technique. }
+
+\cventry{December 2012}{Wishbone Implementation}{}{}{}{Design covered the following steps:
+	\begin{itemize}
+		\item VHDL implementation;
+		\item Testbench implementation and simulation with Modelsim;
+		\item Synthesis using Quartus;
+		\item Hardware test using Altera Cyclone II.
+	\end{itemize} }
+
+
+
+
+%\cventry{2012-2013}{Digital Integrated Systems}{Polytechnic University of Turin}{Torino}{Italy}{Design of an interface which manages the communications in a master-multi slave system. For this project a typical standard protocol of System-on-Chip communications, \textit{Whisbone},was exploited. The EDA softwares used are Modelsim and Quarts.
+%\newline 
+%Design of a processing element which implements a \textit{Butterfly}. In this project several hardware constraints were given, and they were solved through the adoption of the \textit{folding} technique.  }
+%\cventry{2012-2013}{Low Power Electronic Systems}{Polytechnic University of Turin}{Torino}{Italy}{ %Laboratory experiences:
 %	\begin{enumerate}
 %		\item 	\textit{Power Estimation: probabilistic techniques}, used Modelsim to perform a power analysis of some combinatorial circuit described in VHDL.
 %		\item  \textit{FSM State Assignment and VHDL Synthesis} using Synopsys.
@@ -174,15 +213,25 @@ Design of a processing element which implements a \textit{Butterfly}. In this pr
 %		\item \textit{Leakage}: using spice for characterizing cells
 %		and pen\&paper for memory organization.
 %	\end{enumerate}
-	Final Project:\newline
-	Design of a serial interface that allows the interaction between a control unit and a computing unit. The interface must be specifically embedded inside a system which controls the supply noise inside integrated circuits. The aim was to realize a very low power interface, and in order to do this,  certain low power design methods were exploited, such as clock gating and state encoding. Synthesis was made with \textit{Synopsys}. \newline \href{https://github.com/BusoRN/Low-Power-Project}{Github link.}}
-\cventry{2012-2013}{Measurement Systems and Sensors}{Polytechnic University of Turin}{Turin}{Italy}{Development of severals measuring benches exploiting \textit{NI DAQ Board}. This Data acquisition board was driven through forms written in C\#.}
-\cventry{2012-2013}{Digital Microelectronic}{Polytechnic University of Turin}{Turin}{Italy}{Laboratory practices using \textit{Cadence Allegro} to design some masks of digital gates.}
-
-\cventry{2012-2013}{Guiding Electromagnetic System}{Polytechnic University of Turin}{Turin}{Italy}{Designed a stepped impedance RF low-pass filter using \textit{AWR microwave office}. \newline \href{https://github.com/BusoRN/Guiding-project}{Github link.}}
+%	Final Project:\newline
+%	Design of a serial interface that allows the interaction between a control unit and a computing unit. The interface must be specifically embedded inside a system which controls the supply noise inside integrated circuits. The aim was to make a very low power interface, and in order to do this,  certain low power design methods were exploited, such as clock gating and state encoding. Synthesis was made with \textit{Synopsys Design Compiler}. \newline \href{https://github.com/BusoRN/Low-Power-Project}{Github link.}}
+%\cventry{2012-2013}{Measurement Systems and Sensors}{Polytechnic University of Turin}{Turin}{Italy}{Development of severals measuring benches exploiting \textit{NI DAQ Board}. This Data acquisition board was driven through forms written in C\#.}
+%\cventry{2012-2013}{Digital Microelectronic}{Polytechnic University of Turin}{Turin}{Italy}{Laboratory practices using \textit{Cadence Allegro} to design some masks of digital gates.}
+%
+%\cventry{June 2013}{Stepped impedance RF low-pass filter}{}{}{}{Designed a stepped impedance RF low-pass filter using \textit{AWR microwave office}. \newline \href{https://github.com/BusoRN/Guiding-project}{Github link.}}
 %
 
+\section{Working Experience}
 
+\cventry{Apr. 2015 - Present}{Firmware Designer}{\href{http:http://www.sherlock.bike/}{Sherlock Bike}}{Turin}{Italy}{Sherlock is a GPS-based anti-theft device connected to a smartphone app that allows cyclists to precisely locate their bicycles and retrieve them in case of theft.}
+\cventry{Aug. 2014 - Feb. 2015}{Research Trainee}{\href{http://www.tissueeng.net/lab/}{Khademhosseini Lab (Harvard-MIT Health Sciences and Technology )}}{Cambridge, MA}{United States of America}{Designed and developed a custom user interface on Google Glass for simultaneous recording of
+	biosensing data (T, pH) and microscopy images/videos as well as remote control of microfluidic
+	valves for organ-on-a-chip applications.
+	In order to fulfill this aim I have designed and created a complete system
+	which is based on Beaglebone Black.}
+
+\cventry{July 2012 - Sep. 2012}{Internship}{\href{http://www.4ts.it/}{Fortech s.r.l.}}{Rimini}{Italy}{Worked with the company's electronic engineers, learning about the hardwares present in payment systems of fuel service stations. }
+\cventry{2007 - 2010}{Summer Jobs}{\href{}{TES s.r.l. and FM s.n.c.}}{Rimini}{Italy}{Summer job as apprentice electrician and photovoltaic technician. }
 
 
 %Section
@@ -211,20 +260,14 @@ Design of a processing element which implements a \textit{Butterfly}. In this pr
 %%Section
 %
 %
-\section{Technical skills} 
-\cvline{Languages}{\small VHDL, \LaTeX,  JAVA, C\#, C/C++, SystemC, UML, MIPS Assembly, Python}
-\cvline{Platforms}{Linux, Android, Windows} 
-\cvline{Software Tools}{Modelsim, Synopsys, Quartus II, Cadence Design Environment, Multisim \& Ultiboard, NI
-	LabVIEW, Matlab + Simulink, Android Studio, Qt, mbed.org, IAR, MPLAB, Code Composer
-	Studio}
-\cvline{Hardware Tools}{Electronic bench equipment, microPIC, MSP430, FRDM-KL25Z, Beaglebone Black, RaspberryPI, Altera Cyclon II, STM32F401}
+
 \vspace{-3mm}
-\section{Social and Organization Skills}
-\cvline{}{During my 6-month experience in the United States I greatly improved my ability to communicate and
-	to work in a multicultural working environment with colleagues with different backgrounds (chemicals, bioengineers,  biologists). As a meticulous person, I work hard and pay much attention to details, always
-	aiming to improve myself. I learn new skills quickly and am eager
-	to learn from others. I am able to work by myself as well as part of a team. \newline
-	I am an active guy, indeed in my free time I really love play sports and train, I also like spend time with friends and play board game.  }
+%\section{Social and Organization Skills}
+%\cvline{}{During my 6-month experience in the United States I greatly improved my ability to communicate and
+%	to work in a multicultural working environment with colleagues with different backgrounds (chemicals, bioengineers,  biologists). As a meticulous person, I work hard and pay much attention to details, always
+%	aiming to improve myself. I learn new skills quickly and am eager
+%	to learn from others. I am able to work by myself as well as part of a team. \newline
+%	I am an active guy, indeed in my free time I really love play sports and train, I also like spend time with friends and play board game.  }
 
 \vspace{-3mm}
 %Section
