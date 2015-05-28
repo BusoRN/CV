@@ -1,0 +1,87 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+\setlength{\hintscolumnwidth}{2cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Fabio}{Busignani}
+\title{Cover Letter}                               % optional, remove / comment the line if not wanted
+\address{Via Longiano 26}{Rimini (RN), 47922}{Italy}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+39~333~1963542}                   % optional, remove / comment the line if not wanted
+\phone[fixed]{+39~0541~681~253}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{s197883@studenti.polito.it}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{\href{https://it.linkedin.com/in/fabiobusignani}{LinkedIn Page}}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{ijkjk}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Company Recruitment Team}{Broadcom, Didsbury}
+\date{\today}%\\\textbf{RE: Graduate Hardware Engineer - Implementation (CPU) (5207) }}
+
+\opening{Dear Recruiting Committee,}
+\closing{With kindest regards,}
+
+
+\makelettertitle
+\vspace{-5mm}
+I would like to express my interest in the Junior IC Design Engineer position at Broadcom.\\
+I have just completed my master degree in Electronic Engineering at the Polytechnic University of Turin (Italy) with final grade: 110/110 (GPA: 3.71). 
+As formal specialization of my last two academical years I choose \textit{Electronics Systems}, this allowed me to have a broad electronic knowledge, focusing on digital electronics. \\  
+I believe that my skills, my passion for SoC design, and interest in digital communications  make me an ideal candidate for this position.\\
+As a candidate, here is what I could immediately bring to the table:
+\begin{itemize}
+\item {Ability to collaborate and communicate effectively with other staff, and have good interpersonal skills}: strongly improved during my 6-month experience at \textit{Harvard-MIT Health Science and Technology}, where I carried out my master thesis.
+\item Experience of development in C/C++, primarily  used for embedded processors in both personal and professional projects.
+\item Knowledge in SoC and ASIC design: acquired during my master degree with some experience in every level of the design workflow (refers to CV for more details and links to Github repository).
+\end{itemize}
+\vspace{-1mm}
+
+I also have basic knowledge of UNIX shell, Java, SystemC, Verilog, Python and UML. \\
+As a meticulous person, I work hard and pay much attention to details, always aiming to improve myself. I am a quick learner and highly motivated worker.
+Finally, I am able to work in a team as well as by myself.\\
+For any other information, please contact me through the addresses provided in CV.\\
+Thank you for your time and for considering my application, I hope to hear from you in the future.\\
+\makeletterclosing
+\vspace{-4mm}
+
+
+\end{document}
+
+
+%% end of file `template.tex'.
